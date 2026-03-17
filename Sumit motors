@@ -1,0 +1,355 @@
+<div id="intro">
+  <div class="road">
+    <div class="road-line"></div>
+    <div class="road-line2"></div>
+  </div>
+
+  <!-- Animated SVG car -->
+  <svg class="car-svg" viewBox="0 0 280 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Body -->
+    <rect x="20" y="45" width="240" height="48" rx="6" fill="#222"/>
+    <!-- Cabin -->
+    <path d="M70 45 Q85 15 130 12 L195 12 Q225 12 240 45Z" fill="#1a1a2e" stroke="#333" stroke-width="1"/>
+    <!-- Windows -->
+    <path d="M78 43 Q90 22 128 19 L175 19 Q195 19 215 43Z" fill="#1a3a5c" opacity="0.9"/>
+    <line x1="148" y1="19" x2="148" y2="43" stroke="#0d2a42" stroke-width="1.5"/>
+    <!-- Orange stripe -->
+    <rect x="20" y="70" width="240" height="5" rx="1" fill="#ff6b00" opacity="0.8"/>
+    <!-- Bumpers -->
+    <rect x="5" y="55" width="20" height="25" rx="4" fill="#333"/>
+    <rect x="255" y="55" width="20" height="25" rx="4" fill="#333"/>
+    <!-- Headlights -->
+    <rect x="250" y="58" width="18" height="8" rx="2" fill="#ffe066"/>
+    <rect x="250" y="58" width="18" height="8" rx="2" fill="url(#headlight)" opacity="0.7"/>
+    <defs>
+      <radialGradient id="headlight" cx="100%" cy="50%" r="100%">
+        <stop offset="0%" stop-color="#fff"/>
+        <stop offset="100%" stop-color="transparent"/>
+      </radialGradient>
+    </defs>
+    <!-- Taillights -->
+    <rect x="12" y="58" width="12" height="8" rx="2" fill="#cc2200"/>
+    <!-- Door lines -->
+    <line x1="150" y1="45" x2="150" y2="93" stroke="#333" stroke-width="1.5"/>
+    <line x1="100" y1="45" x2="100" y2="93" stroke="#333" stroke-width="1.5"/>
+    <line x1="200" y1="45" x2="200" y2="93" stroke="#333" stroke-width="1.5"/>
+    <!-- Door handles -->
+    <rect x="115" y="65" width="15" height="4" rx="2" fill="#444"/>
+    <rect x="165" y="65" width="15" height="4" rx="2" fill="#444"/>
+    <!-- Wheels -->
+    <circle cx="72" cy="93" r="22" fill="#111"/>
+    <circle cx="72" cy="93" r="16" fill="#222"/>
+    <circle cx="72" cy="93" r="8" fill="#ff6b00"/>
+    <circle cx="72" cy="93" r="4" fill="#111"/>
+    <circle cx="205" cy="93" r="22" fill="#111"/>
+    <circle cx="205" cy="93" r="16" fill="#222"/>
+    <circle cx="205" cy="93" r="8" fill="#ff6b00"/>
+    <circle cx="205" cy="93" r="4" fill="#111"/>
+    <!-- Wheel spokes -->
+    <line x1="72" y1="77" x2="72" y2="93" stroke="#555" stroke-width="2.5"/>
+    <line x1="72" y1="93" x2="72" y2="109" stroke="#555" stroke-width="2.5"/>
+    <line x1="56" y1="93" x2="88" y2="93" stroke="#555" stroke-width="2.5"/>
+    <line x1="61" y1="82" x2="83" y2="104" stroke="#555" stroke-width="2"/>
+    <line x1="83" y1="82" x2="61" y2="104" stroke="#555" stroke-width="2"/>
+    <line x1="205" y1="77" x2="205" y2="93" stroke="#555" stroke-width="2.5"/>
+    <line x1="205" y1="93" x2="205" y2="109" stroke="#555" stroke-width="2.5"/>
+    <line x1="189" y1="93" x2="221" y2="93" stroke="#555" stroke-width="2.5"/>
+    <line x1="194" y1="82" x2="216" y2="104" stroke="#555" stroke-width="2"/>
+    <line x1="216" y1="82" x2="194" y2="104" stroke="#555" stroke-width="2"/>
+  </svg>
+
+  <!-- Exhaust dust -->
+  <div class="dust" style="transform:translateX(-40px)">
+    <span></span><span></span><span></span>
+  </div>
+
+  <div class="intro-logo">
+    <h1>SUMIT<br><span>WHEEL</span><br>ALIGNMENT</h1>
+    <p>🛠️ by Kalim Khan</p>
+    <p class="intro-sub">📍 Shahada · Est. 2009</p>
+  </div>
+
+  <button class="intro-skip" onclick="skipIntro()">SKIP →</button>
+  <div class="intro-progress"></div>
+</div>
+
+<!-- ═══ FAB ═══ -->
+<a href="https://wa.me/919850258558" target="_blank" class="fab" title="WhatsApp">💬</a>
+
+<!-- ═══ MAIN SITE ═══ -->
+<div id="site">
+
+<!-- NAV -->
+<nav id="mainNav">
+  <div class="nav-brand">
+    <span class="nav-logo">SUMIT <span style="color:var(--accent)">WHEEL</span></span>
+    <span class="nav-tag">🛠️ by Kalim Khan & Sandip Patil · Shahada</span>
+  </div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#why">Why Us</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="tel:9850258558" class="nav-call">📞 9850258558</a>
+    <a href="#booking" class="nav-cta">Book Now</a>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#services" onclick="closeMob()">Services</a>
+  <a href="#gallery" onclick="closeMob()">Gallery</a>
+  <a href="#why" onclick="closeMob()">Why Us</a>
+  <a href="#contact" onclick="closeMob()">Contact</a>
+  <a href="#booking" class="mob-cta" onclick="closeMob()">📅 Book Appointment</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-grid-lines"></div>
+  <div class="hero-content">
+    <div class="hero-left">
+      <div class="hero-eyebrow"><span>⚡ Shahada's #1 Alignment Center</span></div>
+      <h1 class="hero-title">
+        SUMIT<br>
+        <span class="line2">WHEEL</span>
+        <span class="line3">ALIGNMENT</span>
+      </h1>
+      <p class="hero-owner">🛠️ Owners: Kalim Khan & Sandip Patil</p>
+      <p class="hero-desc">Smooth rides start with perfect alignment. Precision computerised equipment. All makes & models. Open 7 days a week in Shahada.</p>
+      <div class="hero-btns">
+        <a href="#booking" class="btn-fire">📅 Book Now →</a>
+        <a href="https://wa.me/919850258558" target="_blank" class="btn-wa">💬 WhatsApp</a>
+        <a href="#services" class="btn-ghost">Services ↓</a>
+      </div>
+      <div class="hero-badges">
+        <span class="hero-badge">📍 <strong>Shahada 425409</strong></span>
+        <span class="hero-badge">🕗 <strong>10AM–8PM</strong> · 7 Days</span>
+        <span class="hero-badge">📞 <strong>9850258558</strong></span>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="wheel-container">
+        <div class="wheel-outer"></div>
+        <div class="orbit-dot"></div>
+        <div class="orbit-dot"></div>
+        <div class="orbit-dot"></div>
+        <div class="wheel-core">
+          <div class="wheel-glow"></div>
+          <svg class="wheel-svg" viewBox="0 0 260 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="130" cy="130" r="125" stroke="rgba(255,107,0,0.25)" stroke-width="3"/>
+            <circle cx="130" cy="130" r="125" stroke="rgba(255,107,0,0.6)" stroke-width="5" stroke-dasharray="20 30" stroke-linecap="round"/>
+            <circle cx="130" cy="130" r="105" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+            <line x1="130" y1="5" x2="130" y2="75" stroke="rgba(255,255,255,0.2)" stroke-width="10" stroke-linecap="round"/>
+            <line x1="130" y1="185" x2="130" y2="255" stroke="rgba(255,255,255,0.2)" stroke-width="10" stroke-linecap="round"/>
+            <line x1="5" y1="130" x2="75" y2="130" stroke="rgba(255,255,255,0.2)" stroke-width="10" stroke-linecap="round"/>
+            <line x1="185" y1="130" x2="255" y2="130" stroke="rgba(255,255,255,0.2)" stroke-width="10" stroke-linecap="round"/>
+            <line x1="46" y1="46" x2="98" y2="98" stroke="rgba(255,255,255,0.12)" stroke-width="8" stroke-linecap="round"/>
+            <line x1="162" y1="162" x2="214" y2="214" stroke="rgba(255,255,255,0.12)" stroke-width="8" stroke-linecap="round"/>
+            <line x1="214" y1="46" x2="162" y2="98" stroke="rgba(255,255,255,0.12)" stroke-width="8" stroke-linecap="round"/>
+            <line x1="98" y1="162" x2="46" y2="214" stroke="rgba(255,255,255,0.12)" stroke-width="8" stroke-linecap="round"/>
+            <circle cx="130" cy="130" r="45" fill="rgba(255,107,0,0.9)"/>
+            <circle cx="130" cy="130" r="30" fill="#ff6b00"/>
+          </svg>
+        </div>
+        <div class="wheel-center-text">
+          <span class="wct-num">SWA</span>
+          <span class="wct-label">Since 2009</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker">
+  <div class="ticker-track">
+    <span class="ticker-item">⚙️ WHEEL ALIGNMENT</span><span class="ticker-sep">◆</span>
+    <span class="ticker-item">🔧 TYRE BALANCING</span><span class="ticker-sep">◆</span>
+    <span class="ticker-item">🚗 STEERING CHECK</span><span class="ticker-sep">◆</span>
+    <span class="ticker-item">🔩 SUSPENSION REPAIR</span><span class="ticker-sep">◆</span>
+    <span class="ticker-item">🏁 ALL MAKES & MODELS</span><span class="ticker-sep">◆</span>
+    <span class="ticker-item">📅 OPEN 7 DAYS A WEEK</span><span class="ticker-sep">◆</span>
+    <span class="ticker-item">⚙️ WHEEL ALIGNMENT</span><span class="ticker-sep">◆</span>
+    <span class="ticker-item">🔧 TYRE BALANCING</span><span class="ticker-sep">◆</span>
+    <span class="ticker-item">🚗 STEERING CHECK</span><span class="ticker-sep">◆</span>
+    <span class="ticker-item">🔩 SUSPENSION REPAIR</span><span class="ticker-sep">◆</span>
+    <span class="ticker-item">🏁 ALL MAKES & MODELS</span><span class="ticker-sep">◆</span>
+    <span class="ticker-item">📅 OPEN 7 DAYS A WEEK</span><span class="ticker-sep">◆</span>
+  </div>
+</div>
+
+<!-- STATS -->
+<div class="stats-bar">
+  <div class="stats-bar-inner">
+    <div class="stat-item"><div class="stat-item-num">15+</div><div class="stat-item-label">Years Experience</div></div>
+    <div class="stat-item"><div class="stat-item-num">5K+</div><div class="stat-item-label">Vehicles Served</div></div>
+    <div class="stat-item"><div class="stat-item-num">100%</div><div class="stat-item-label">Satisfaction</div></div>
+    <div class="stat-item"><div class="stat-item-num">7</div><div class="stat-item-label">Days Open</div></div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="sec-header">
+    <div class="sec-label">🛞 What We Do</div>
+    <h2 class="sec-title">OUR <span>SERVICES</span></h2>
+  </div>
+  <div class="services-grid">
+    <div class="svc-card"><div class="svc-num">01</div><span class="svc-icon">🛞</span><h3 class="svc-name">Wheel Alignment</h3><p class="svc-desc">Computer-aided 4-wheel alignment correcting camber, caster & toe angles. Keeps your car straight and extends tyre life.</p><a href="#booking" class="svc-link">Book →</a></div>
+    <div class="svc-card"><div class="svc-num">02</div><span class="svc-icon">⚖️</span><h3 class="svc-name">Wheel Balancing</h3><p class="svc-desc">Dynamic balancing to eliminate vibration, reduce tyre wear and deliver a smooth ride at any speed.</p><a href="#booking" class="svc-link">Book →</a></div>
+    <div class="svc-card"><div class="svc-num">03</div><span class="svc-icon">🔧</span><h3 class="svc-name">Steering Check</h3><p class="svc-desc">Full inspection of tie rods, ball joints and rack & pinion for precise, safe control on every road.</p><a href="#booking" class="svc-link">Book →</a></div>
+    <div class="svc-card"><div class="svc-num">04</div><span class="svc-icon">🔩</span><h3 class="svc-name">Suspension Check</h3><p class="svc-desc">Comprehensive inspection of shocks, struts and bushings. Catch wear before it becomes a safety risk.</p><a href="#booking" class="svc-link">Book →</a></div>
+    <div class="svc-card"><div class="svc-num">05</div><span class="svc-icon">🔄</span><h3 class="svc-name">Tyre Rotation</h3><p class="svc-desc">Systematic rotation for even wear across all four tyres — maximising lifespan and maintaining balance.</p><a href="#booking" class="svc-link">Book →</a></div>
+    <div class="svc-card"><div class="svc-num">06</div><span class="svc-icon">🛠️</span><h3 class="svc-name">Full Vehicle Check</h3><p class="svc-desc">Our most complete package — alignment, balance, suspension and steering all checked in one visit.</p><a href="#booking" class="svc-link">Book →</a></div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery-sec" id="gallery">
+  <div class="sec-header">
+    <div class="sec-label">📸 Real Work</div>
+    <h2 class="sec-title">HAPPY <span>CUSTOMERS</span></h2>
+  </div>
+  <div class="gallery-grid">
+    <div class="gal-card">
+      <div class="gal-thumb gal-bg-1"><div class="gal-car-icon">🚙</div></div>
+      <div class="gal-overlay"><div class="gal-overlay-title">Mahindra Scorpio</div><div class="gal-overlay-sub">4-Wheel Alignment · Suspension</div></div>
+      <div class="gal-label"><div class="gal-label-name">Mahindra Scorpio</div><div class="gal-label-svc">Alignment · Suspension</div></div>
+      <div class="gal-stars">⭐⭐⭐⭐⭐</div>
+    </div>
+    <div class="gal-card">
+      <div class="gal-thumb gal-bg-2"><div class="gal-car-icon">🚗</div></div>
+      <div class="gal-overlay"><div class="gal-overlay-title">Maruti Ertiga</div><div class="gal-overlay-sub">Balancing · Tyre Rotation</div></div>
+      <div class="gal-label"><div class="gal-label-name">Maruti Ertiga</div><div class="gal-label-svc">Balancing · Rotation</div></div>
+      <div class="gal-stars">⭐⭐⭐⭐⭐</div>
+    </div>
+    <div class="gal-card">
+      <div class="gal-thumb gal-bg-3"><div class="gal-car-icon">🚐</div></div>
+      <div class="gal-overlay"><div class="gal-overlay-title">Toyota Innova Crysta</div><div class="gal-overlay-sub">Full Vehicle Check</div></div>
+      <div class="gal-label"><div class="gal-label-name">Toyota Innova Crysta</div><div class="gal-label-svc">Full Vehicle Check</div></div>
+      <div class="gal-stars">⭐⭐⭐⭐⭐</div>
+    </div>
+    <div class="gal-card">
+      <div class="luxury-tag">★ Luxury</div>
+      <div class="gal-thumb gal-bg-4"><div class="gal-car-icon">🏎️</div></div>
+      <div class="gal-overlay" style="background:rgba(180,140,0,0.85)"><div class="gal-overlay-title">Mercedes-Benz E-Class</div><div class="gal-overlay-sub">Precision Alignment · Steering</div></div>
+      <div class="gal-label"><div class="gal-label-name">Mercedes-Benz E-Class</div><div class="gal-label-svc">Alignment · Steering</div></div>
+      <div class="gal-stars">⭐⭐⭐⭐⭐</div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="why-sec" id="why">
+  <div class="why-inner">
+    <div>
+      <div class="sec-label">🏆 Why Choose Us</div>
+      <h2 class="sec-title">TRUSTED BY <span>THOUSANDS</span></h2>
+      <div style="margin-top:3rem" class="why-hex-grid">
+        <div class="hex-item"><div class="hex-icon">🛞</div><div class="hex-label">Alignment</div></div>
+        <div class="hex-item"><div class="hex-icon">⚙️</div><div class="hex-label">Precision</div></div>
+        <div class="hex-item"><div class="hex-icon">🔧</div><div class="hex-label">Steering</div></div>
+        <div class="hex-item"><div class="hex-icon">⭐</div><div class="hex-label">Rated</div></div>
+        <div class="hex-item"><div class="hex-icon">🚗</div><div class="hex-label">All Cars</div></div>
+        <div class="hex-item"><div class="hex-icon">📅</div><div class="hex-label">7 Days</div></div>
+      </div>
+    </div>
+    <div class="why-points">
+      <div class="why-pt"><div class="why-pt-icon">🖥️</div><div><div class="why-pt-title">State-of-the-art Computerised Equipment</div><div class="why-pt-desc">Latest computerised alignment and balancing machines for pinpoint accuracy on every vehicle.</div></div></div>
+      <div class="why-pt"><div class="why-pt-icon">💰</div><div><div class="why-pt-title">Transparent Pricing — No Hidden Fees</div><div class="why-pt-desc">Clear quote before any work begins. What we quote is what you pay. Always.</div></div></div>
+      <div class="why-pt"><div class="why-pt-icon">🚙</div><div><div class="why-pt-title">All Makes & Models — Including Luxury</div><div class="why-pt-desc">Hatchbacks, sedans, SUVs, and even Mercedes-Benz — our team handles everything.</div></div></div>
+      <div class="why-pt"><div class="why-pt-icon">📅</div><div><div class="why-pt-title">Open Every Single Day of the Week</div><div class="why-pt-desc">Monday to Sunday, 10AM to 8PM. Because your schedule shouldn't wait.</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT STRIP -->
+<div class="contact-strip" id="contact">
+  <div class="contact-strip-inner">
+    <div class="ci"><div class="ci-label">Owner</div>    <div class="ci-val" style="font-family:'Caveat',cursive;font-size:1.2rem;font-weight:700;">🛠️ Kalim Khan & Sandip Patil</div></div>
+    <div class="ci"><div class="ci-label">Phone</div><div class="ci-val"><a href="tel:9850258558">📞 9850258558</a></div></div>
+    <div class="ci"><div class="ci-label">WhatsApp</div><div class="ci-val"><a href="https://wa.me/919850258558" target="_blank">💬 Chat Now</a></div></div>
+    <div class="ci"><div class="ci-label">Address</div><div class="ci-val"><a href="https://maps.google.com/?q=Dodaincha+Road+Shahada" target="_blank">📍 Dodaincha Rd, Forest Office, Shahada 425409</a></div></div>
+    <div class="ci"><div class="ci-label">Hours</div><div class="ci-val">🕗 Mon–Sun · 10AM–8PM</div></div>
+  </div>
+</div>
+
+<!-- LOCATION MAP -->
+<section class="map-sec" id="location">
+  <div class="map-sec-inner">
+    <div class="map-left">
+      <div class="sec-label">📍 Find Us</div>
+      <h2 class="sec-title">OUR <span>LOCATION</span></h2>
+      <p class="map-desc">We're easy to find — right on Dodaincha Road near the Forest Office in Shahada.</p>
+
+      <div class="map-info-cards">
+        <div class="mic">
+          <div class="mic-icon">📍</div>
+          <div>
+            <div class="mic-label">Address</div>
+            <div class="mic-val">Dondichea Road, Near Forest Office,<br>Saibaba Nagar, Shahada – 425409</div>
+          </div>
+        </div>
+        <div class="mic">
+          <div class="mic-icon">📞</div>
+          <div>
+            <div class="mic-label">Phone</div>
+            <div class="mic-val"><a href="tel:9850258558">+91 98502 58558</a></div>
+          </div>
+        </div>
+        <div class="mic">
+          <div class="mic-icon">🕗</div>
+          <div>
+            <div class="mic-label">Hours</div>
+            <div class="mic-val">Mon – Sat: 9:00 AM – 7:00 PM<br><span style="color:var(--accent)">Sun: Closed</span></div>
+          </div>
+        </div>
+        <div class="mic">
+          <div class="mic-icon">⭐</div>
+          <div>
+            <div class="mic-label">Google Rating</div>
+            <div class="mic-val">4.3 / 5 &nbsp;·&nbsp; <span style="color:#ffd700">★★★★</span><span style="color:rgba(255,215,0,0.4)">★</span>&nbsp; (21 reviews)</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="map-btns">
+        <a href="https://maps.google.com/?q=Sumit+Motors+Dondichea+Road+Shahada+425409" target="_blank" class="btn-fire" style="font-size:0.8rem;padding:0.8rem 1.5rem">🗺️ Open in Google Maps</a>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=21.527353,74.4770073" target="_blank" class="btn-ghost" style="font-size:0.8rem;padding:0.8rem 1.5rem">🧭 Get Directions</a>
+      </div>
+    </div>
+
+    <div class="map-right">
+      <div class="map-frame-wrap">
+        <div class="map-frame-label">
+          <span class="map-live-dot"></span> Live Map
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3726.8!2d74.4770073!3d21.527353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdbe6b79b24e427%3A0x51d9233511085b81!2sSumit%20Motors!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin"
+          width="100%" height="100%"
+          style="border:0;border-radius:4px;"
+          allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section class="booking-sec" id="booking">
+  <div class="booking-header">
+    <div class="sec-label" style="justify-content:center">📅 Reserve Your Spot</div>
+    <h2 class="sec-title">BOOK AN <span style="color:var(--accent)">APPOINTMENT</span></h2>
+  </div>
+  <div class="booking-wrap">
+    <div class="booking-top">
+      <div class="booking-top-icon">🛞</div>
+      <div>
+        <h3>Schedule Your Service</h3>
+        <p>Fill in the form below and Kalim Khan's team will confirm
